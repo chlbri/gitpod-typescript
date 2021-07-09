@@ -1,6 +1,8 @@
 tasks:
-  - name: Dev Installs
+  - name: ts-node install globally
     init: npm install -g ts-node
+  - name: Install node dependencies
+    init: yarn
 
 vscode:
   extensions:
