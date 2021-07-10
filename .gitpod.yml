@@ -4,23 +4,14 @@ tasks:
   - name: ts-node install globally
     init: npm install -g ts-node
 
-  - name: install typescript dependency
-    init: yarn add -d typescript
-
-  - name: install @typescript-eslint/eslint-plugin dependency
-    init: yarn add -d @typescript-eslint/eslint-plugin
-
-  - name: install @typescript-eslint/parser dependency
-    init: yarn add -d @typescript-eslint/parser
-
-  - name: install eslint dependency
-    init: yarn add -d eslint
-
-  - name: install jest-cucumber dependency
-    init: yarn add -d jest-cucumber
-
-  - name: Install node dependencies
-    init: yarn
+  - name: install all dependencies
+    init: |
+      yarn add -D typescript
+      yarn add -D @typescript-eslint/eslint-plugin
+      yarn add -D @typescript-eslint/parser
+      yarn add -D eslint
+      yarn add -D jest-cucumber
+      yarn
 
 vscode:
   extensions:
