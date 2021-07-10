@@ -1,3 +1,4 @@
+---
 # package.json repo à changer
 
 tasks:
@@ -35,6 +36,6 @@ vscode:
     - yatki.vscode-surround
     - bradlc.vscode-tailwindcss
     - hbenl.vscode-test-explorer
-    - gruntfuggly.todo-tree
-    - gamunu.vscode-yarn
     - fabiospampinato.vscode-todo-plus
+    - dbaeumer.vscode-eslint
+    - tabnine.tabnine-vscode
