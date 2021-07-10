@@ -1,4 +1,3 @@
----
 # package.json repo à changer
 
 tasks:
@@ -39,3 +38,5 @@ vscode:
     - fabiospampinato.vscode-todo-plus
     - dbaeumer.vscode-eslint
     - tabnine.tabnine-vscode
+    - codezombiech.gitignore
+    - foxundermoon.shell-format
