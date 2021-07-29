@@ -1,6 +1,6 @@
 {
   "name": "gitpod-typescript",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "GitPod for Typescript",
   "repository": "https://github.com/react-if/gitpod-typescript.git", 
   "author": "chlbri <bri_lvi@icloud.com>",
