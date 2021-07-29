@@ -11,6 +11,7 @@ tasks:
       yarn add -D @typescript-eslint/parser
       yarn add -D eslint
       yarn add -D jest-cucumber
+      yarn add -D prettier
       yarn
 
 vscode:
