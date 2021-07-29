@@ -1,6 +1,8 @@
 const edit = require('edit-json-file');
 const shell = require('shelljs');
 
+const version = '0.0.1';
+
 const package = edit(`${process.cwd()}/package.json`);
 
 package.set('version', version);

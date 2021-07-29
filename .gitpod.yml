@@ -1,11 +1,11 @@
 # package.json repo à changer
 
-tasks:    
+tasks:
   - name: Configuration
-    init:  |
+    init: |
       cd .gitpod-config
       bash bash.sh
-      node _json.js
+      node bash.js
       cd ..
       yarn run prettier
 
@@ -27,3 +27,4 @@ vscode:
     - tabnine.tabnine-vscode
     - codezombiech.gitignore
     - foxundermoon.shell-format
+    - redhat.vscode-xml
