@@ -1,5 +1,6 @@
 const edit = require('edit-json-file');
 const shell = require('shelljs');
+const fs = require('fs');
 
 const version = '0.0.1';
 
@@ -31,3 +32,5 @@ const repository = shell
 package.set('repository', repository);
 
 package.save();
+
+fs.writeFileSync(`${process.cwd()}/README.md`, `# ${repository}`);
