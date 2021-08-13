@@ -2,7 +2,7 @@
 
 tasks:
   - name: Configuration
-    before: npm install -g expo ts-node
+    before: npm install -g ts-node
     init: |
       shopt -s dotglob
       bash .gitpod-config/bash.sh
