@@ -10,6 +10,8 @@ const repository = shell
 
 package.set('repository', repository);
 
+package.set('description', repository);
+
 package.save();
 
 fs.writeFileSync(`${process.cwd()}/README.md`, `# ${repository}`);
