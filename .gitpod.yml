@@ -40,3 +40,4 @@ vscode:
     - codezombiech.gitignore
     - foxundermoon.shell-format
     - redhat.vscode-xml
+    - hbenl.test-adapter-converter
