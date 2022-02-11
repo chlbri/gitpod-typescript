@@ -23,8 +23,6 @@ tasks:
 
 vscode:
   extensions:
-    - ms-azuretools.vscode-docker
-    - ms-ceintl.vscode-language-pack-fr
     - github.vscode-pull-request-github
     - eamodio.gitlens
     - graphql.vscode-graphql
