@@ -7,7 +7,7 @@ tasks:
       bash .gitpod-config/dependencies.sh
       node .gitpod-config/package.js
       bash .gitpod-config/configuration.sh
-      gp sync-done build
+      gp sync-done config
       
   - name: Creation of branches
     init: |
