@@ -16,9 +16,8 @@ tasks:
       gp sync-done branches
       
   - name: Clean
-    init: |
-      gp sync-await branches
-      bash ./gitpod-config/cleanYaml.sh
+    init: gp sync-await branches
+    command: bash ./gitpod-config/cleanYaml.sh
     
 vscode:
   extensions:
