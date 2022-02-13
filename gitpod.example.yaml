@@ -2,7 +2,7 @@
 
 tasks:
   - name: Configuration
-    before: npm install -g ts-node pnpm typescript jest
+    before: bash .gitpod-config/globalDependencies.sh
     init: pnpm install
     command: jest
     
