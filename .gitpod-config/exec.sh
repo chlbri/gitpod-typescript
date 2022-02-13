@@ -1,5 +1,5 @@
-./globalDependencies.sh
-./dependencies.sh
-node ./package.js
-./git_branches.sh
-./cleanYaml.sh
+bash .gitpod-config/globalDependencies.sh
+bash .gitpod-config/dependencies.sh
+node .gitpod-config/package.js
+bash .gitpod-config/git_branches.sh
+bash .gitpod-config/cleanYaml.sh
