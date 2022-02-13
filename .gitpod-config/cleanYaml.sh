@@ -1,2 +1,2 @@
-cp ../gitpod.example.yaml ../.gitpod.yaml
+cp ../gitpod.temp.yaml ../.gitpod.yaml
 rm ../.gitpod.yaml
