@@ -2,25 +2,24 @@
 
 tasks:
   - name: Configuration
-    before: npm install -g ts-node
+    before: bash .gitpod-config/globalDependencies.sh
     init: |
-      shopt -s dotglob
-      bash .gitpod-config/bash.sh
-      node .gitpod-config/bash.js
-      git push
+      bash .gitpod-config/dependencies.sh
+      node .gitpod-config/package.js
+      bash .gitpod-config/configuration.sh
       gp sync-done build
       
   - name: Creation of branches
     init: |
-      gp sync-await build
-      git checkout -b prod
-      git push -u origin prod
-      git checkout -b staging
-      git push -u origin staging
-      git checkout -b upgrade
-      git push -u origin upgrade
-      git checkout main
-
+      gp sync-await config
+      bash ./gitpod-config/git_branches.sh
+      gp sync-done branches
+      
+  - name: Clean
+    init: |
+      gp sync-await branches
+      bash ./gitpod-config/cleanYaml.sh
+    
 vscode:
   extensions:
     - github.vscode-pull-request-github
@@ -34,7 +33,6 @@ vscode:
     - hbenl.vscode-test-explorer
     - fabiospampinato.vscode-todo-plus
     - dbaeumer.vscode-eslint
-    - tabnine.tabnine-vscode
     - codezombiech.gitignore
     - foxundermoon.shell-format
     - redhat.vscode-xml
