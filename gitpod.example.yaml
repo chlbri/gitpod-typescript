@@ -19,7 +19,6 @@ vscode:
     - hbenl.vscode-test-explorer
     - fabiospampinato.vscode-todo-plus
     - dbaeumer.vscode-eslint
-    - tabnine.tabnine-vscode
     - codezombiech.gitignore
     - foxundermoon.shell-format
     - redhat.vscode-xml
