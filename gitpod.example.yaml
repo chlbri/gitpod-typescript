@@ -2,7 +2,7 @@
 
 tasks:
   - name: Configuration
-    before: npm install -g ts-node pnpm typescript
+    before: npm install -g ts-node pnpm typescript jest
     init: pnpm install
     command: jest
     
