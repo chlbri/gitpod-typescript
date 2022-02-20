@@ -2,8 +2,8 @@
 
 tasks:
   - name: Configuration
-    before: bash .gitpod-config/globalDependencies.sh
-    init: pnpm install
+    before: sh .gitpod-config/globalDependencies.sh
+    init: sh .gitpod-config/dependencies.sh
     command: jest
     
 vscode:
