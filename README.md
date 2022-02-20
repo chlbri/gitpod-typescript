@@ -1,1 +1,1 @@
-# gitpod-typescript
+# https://github.com/chlbri/gitpod-typescript.git

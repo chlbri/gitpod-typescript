@@ -1,1 +1,1 @@
-    npm install -g ts-node typescript pnpm jest
+npm install -g ts-node typescript pnpm jest

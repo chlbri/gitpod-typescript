@@ -3,21 +3,8 @@
 tasks:
   - name: Configuration
     before: bash .gitpod-config/globalDependencies.sh
-    init: |
-      bash .gitpod-config/dependencies.sh
-      node .gitpod-config/package.js
-      gp sync-done config
-      
-  - name: Creation of branches
-    init: |
-      gp sync-await config
-      bash .gitpod-config/git_branches.sh
-      gp sync-done branches
-      
-  - name: Clean
-    init: |
-      gp sync-await branches
-      bash .gitpod-config/cleanYaml.sh
+    init: pnpm install
+    command: jest
     
 vscode:
   extensions:
