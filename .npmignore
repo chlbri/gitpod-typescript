@@ -142,3 +142,20 @@ yarn.lock
 
 # Library
 .gitpod-config
+
+#Apple
+.DS_Store
+
+# Settings
+.eslintignore
+.eslintrc.yml
+.gitpod.yml
+.prettierignore
+.prettierrc.yml
+jest.config.js
+tsconfig.json
+pnpm-lock.yaml
+tests
+build.npm.js
+gitpod.temp.yml
+globals.d.ts
