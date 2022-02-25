@@ -4,7 +4,8 @@
   "description": "https://github.com/chlbri/gitpod-typescript.git",
   "author": "chlbri <bri_lvi@icloud.com>",
   "license": "MIT",
-  "private": true,
+  "main":"index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "tsc": "tsc",
     "build": "yarn run tsc && yarn run lint",
