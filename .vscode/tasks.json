@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "tsc-w",
+      "problemMatcher": [],
+      "isBackground": true,
+      "label": "pnpm: tsc",
+      "detail": "tsc -w",
+      "runOptions": { "runOn": "folderOpen" }
+    }
+  ]
+}
