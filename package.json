@@ -8,16 +8,14 @@
   "typings": "index.d.ts",
   "scripts": {
     "tsc": "tsc",
+    "tsc-w": "tsc -w",
     "build": "pnpm run tsc && pnpm run lint",
     "test": "jest",
     "prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
     "eslint": "eslint \"{src/**/*,App}.{ts,tsx}\"",
     "lint": "pnpm run prettier && pnpm run eslint --fix",
-    "rm": "./node_modules/.bin/rimraf -rf node_modules pnpm-lock.yaml",
-    "rinit": "yarn run rm && yarn cache clean && pnpm run pnpm",
-    "publish": "pnpm run rm && pnpm run clean && pnpm run pnpm",
-    "clean": "pnpm cache clean",
     "pnpm": "pnpm install",
+    "upgrade": "ncu -u && pnpm run pnpm",
     "git-push": "git push --tags"
   },
   "devDependencies": {
