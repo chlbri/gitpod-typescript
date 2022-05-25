@@ -5,10 +5,15 @@
       "type": "npm",
       "script": "tsc-w",
       "problemMatcher": [],
-      "isBackground": true,
       "label": "pnpm: tsc",
       "detail": "tsc -w",
-      "runOptions": { "runOn": "folderOpen" }
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated"
+      }
     }
   ]
 }
